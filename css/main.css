@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@font-face {
+	font-family: 'ProximaNovaT';
+	src: url('fonts/ProximaNovaT-Thin.eot');
+	src: local('☺'), url('fonts/ProximaNovaT-Thin.woff') format('woff'), url('fonts/ProximaNovaT-Thin.ttf') format('truetype'), url('fonts/ProximaNovaT-Thin.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ProximaNovaRegular';
+	src: url('fonts/ProximaNovaRegular.eot');
+	src: local('☺'), url('fonts/ProximaNovaRegular.woff') format('woff'), url('fonts/ProximaNovaRegular.ttf') format('truetype'), url('fonts/ProximaNovaRegular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Forever_Brush_Script_Demo';
+	src: url('fonts/Forever_Brush_Script_Demo.eot');
+	src: local('☺'), url('fonts/Forever_Brush_Script_Demo.woff') format('woff'), url('fonts/Forever_Brush_Script_Demo.ttf') format('truetype'), url('fonts/Forever_Brush_Script_Demo.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Font-Awesome-5-Brands-Regular-400';
+	src: url('fonts/Font-Awesome-5-Brands-Regular-400.eot');
+	src: local('☺'), url('fonts/Font-Awesome-5-Brands-Regular-400.woff') format('woff'), url('fonts/Font-Awesome-5-Brands-Regular-400.ttf') format('truetype'), url('fonts/Font-Awesome-5-Brands-Regular-400.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+    margin: 0;
+    font-family: 'ProximaNovaRegular', 'Asap', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    background-color: #f3f4f7;
+}
+.container__fixed{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.container__flex{
+    display: flex;
+    justify-content: space-between;
+}
+.showpanel{
+    height: 950px;
+    background: url(../images/showpanel/bg.jpg) no-repeat;
+    background-size: cover;
+}
+.logo__link{
+    font-family: 'ProximaNovaT', 'Asap', sans-serif;
+    font-size: 31px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 200;
+}
+.info{
+    width: 56%;
+    height: 750px;
+    text-align: center;
+}
+.showpanel__info{
+    align-items: center;
+    padding-top: 248px;
+    box-sizing: border-box;
+}
+.info__heading{
+    font-family: 'ProximaNovaT', 'Asap', sans-serif;
+    font-size: 72px;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.info__text{
+    line-height: 30px;
+    margin: 22px 0;
+}
+.header{
+    padding-top: 53px;
+    padding-bottom: 53px;
+}
+.header__sandwich{
+    margin: 7px 0 0;
+}
+.sandwich{
+	display: inline-block;
+}
+.sandwich-box{
+	position: relative;
+	width: 40px;
+    height: 30px;
+    top: 16px;
+    left: 3px;
+}
+.sandwich-box__line, .sandwich-box__line:after, .sandwich-box__line:before {
+	position: absolute;
+	width: 35px;
+	height: 3px;
+	transition: transform .7s ease;
+	border-radius: 4px;
+	background: rgb(255, 255, 255);
+}
+.sandwich-box__line:before{
+	top: 10px;
+}
+.sandwich-box__line:after{
+	top: 20px;
+}
+.sandwich-box__line:after, 
+.sandwich-box__line:before{
+	content: "";
+	display: block;
+}
+.sandwich__checkbox{
+    display: none;
+    width: 40px;
+	height: 40px;
+	opacity: 0;
+	position: absolute;
+	z-index: 9999;
+}
+.sandwich__sandwich-box{
+    display: none;
+}
+.sandwich__menu,
+.useful-links,
+.contactus-list,
+.socials{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu__item{
+    margin: 0 0 0 32px;
+}
+.menu__item:first-child{
+    margin-left: 0;
+}
+.menu__link{
+    font-family: 'ProximaNovaRegular', 'Asap', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.logo__link:hover,
+.menu__link:hover{
+    color:  rgba(255, 255, 255, 0.6);;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+}
+.about{
+    background-color: #962323;
+}
+.about-content{
+    height: 640px;
+    font-size: 0px;
+}
+.about__about-content{
+    align-items: center;
+}
+.about-img{
+    box-shadow: 0.7px 1px 27px 0px rgba(0, 0, 0, 0.3);
+}
+.about-img__photo{
+    width: 100%;
+    height: auto;
+}
+.about-text{
+    width: 47%;
+    height: 342px;
+    text-align: center;
+}
+.recipes{
+    width: 47%;
+    height: 292px;
+    text-align: center;
+}
+.heading{
+    font-family: 'Conv_Forever_Brush_Script_Demo', Arial, sans-serif;
+    font-size: 56px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 0;
+    margin-bottom: 50px;
+    /* padding: 0; */
+}
+.heading::after{
+    content: "";
+    display: block;
+    width: 108px;
+    border-bottom: 2px solid #fff;
+    margin: -3px auto 0 ;
+}
+.heading_pink-bottomline:after{
+    border-color: #c8235d;
+}
+.about-text__text,
+.recipes__text{
+    font-size: 18px;
+    line-height: 30px;
+}
+.signatures{
+    height: 483px;
+    background: url(../images/signature/bg.jpg) no-repeat;
+    padding: 0.01%;
+    box-sizing: border-box;
+}
+.container__signatures{
+    display: flex;
+    align-items: center;
+}
+.signatures__recipes{
+    margin: 0 auto;
+}
+.dish-menu{
+    text-align: center;
+    padding-top: 92px;
+    padding-bottom: 67px;
+    box-sizing: border-box;
+}
+.part-menu{
+    width: 41.4%;
+}
+.dish-menu-content{
+    font-size: 16px;
+    font-weight: 200;
+    padding-bottom: 50px;
+    padding-top: 47px;
+    box-sizing: border-box;
+}
+.dish-menu__heading{
+    color: #0b0c0d;
+}
+.dish{
+    text-align: left;
+}
+.part-menu__dish{
+    margin-bottom: 39px;
+}
+.part-menu__dish:last-child{
+    margin-bottom: 0;
+}
+.dish-heading__name{
+    font-size: 16px;
+    font-family: 'ProximaNovaT';
+    color: #0b0c0d;
+    text-transform: uppercase;
+}
+.dish-heading__price{
+    color: #c8235d;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+.dish__description{
+    color: #505153;
+    padding-top: 3px;
+    box-sizing: border-box;
+}
+.portfolio{
+    font-size: 0;
+    max-width: 1600px;
+    overflow: hidden;
+}
+.portfolio-list{
+    width: 1920px;
+}
+.contact-block{
+    background-color: #25262a;
+    color: #fff;
+    text-align: left;
+}
+.contacts{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding-top: 80px;
+    padding-bottom: 66px ;
+    box-sizing: border-box;
+}
+.restaurant{
+    width: 22%;
+}
+.contactus{
+    width: 43%;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+.contact-us{
+    width: 20%;
+}
+.restaurant__heading{
+    font-family: 'Conv_Font-Awesome-5-Brands-Regular-400';
+    font-size: 25px;
+    margin: 4px 0 44px;
+    font-weight: 100;
+}
+.restaurant__text{
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+.contactus__heading{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 8px 0 44px;
+}
+.contactus-list__item{
+    margin-bottom: 17px;
+}
+.contactus-list__link_bolt{
+    font-weight: bold;
+}
+.contactus-list__link .fas{
+    margin-right: 20px;
+    color: #c0235a;
+}
+.contactus-list__link,
+.useful-links__link{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+.contactus-list__link:hover{
+    color:  rgba(255, 255, 255, 0.6);
+}
+.contactus-list__item,
+.useful-links__item{
+    display: block;
+}
+.footer-block{
+    background-color: #16171b;
+}
+.footer{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+.footer__copyright{
+    color: #8b8b8d;
+    width: 30%;
+}
+.useful-links{
+    width: 38%;
+}
+.useful-links__link{
+    color: #8b8b8d;
+    text-transform: capitalize;
+}
+.socials{
+    width: 18.9%;
+    margin-right: 25px;
+}
+.socials__item{
+    display: inline-block;
+}
+.socials__link{
+    display: block;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    color: #8b8b8d;
+}
+.socials__link:hover,
+.useful-links__link:hover{
+    color: #fff;
+}
+
+@media screen and (max-width: 992px){
+    .info__heading {
+        font-size: 47px;
+    }
+    .showpanel{
+        background: url(../images/showpanel/bg.jpg) no-repeat 20% 20%;
+    }
+    .about-img,
+    .about-text{
+        width: 48%;
+    }
+    .about-text__text, .recipes__text {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .contacts{
+        padding-top: 25px;
+        padding-bottom: 25px ;
+    }
+    .footer{
+        font-size: 11px;
+        letter-spacing: 0.6px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .recipes{
+        width: 70%;
+    }
+    .contactus-list__link .fas {
+        margin-right: 6px;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .logo__link{
+        font-size: 26px;
+    }
+    .menu__link{
+        font-size: 13px;
+    }
+    .showpanel{
+        height: auto;
+        background: url(../images/showpanel/bg.jpg) no-repeat 40% 40%;
+    }
+    .info__heading{
+        font-size: 40px;
+    }
+    .info{
+        height: 311px;
+    }
+    .showpanel__info{
+        padding-top: 50px;
+    }
+    .about-img{
+        width: 46%;
+    }
+    .about-content{
+        height: 380px;
+    }
+    .signatures{
+        height: 360px;
+    }
+    .dish-menu{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .dish-menu-content{
+        padding-bottom: 30px;
+        padding-top: 0px;
+    }
+    .portfolio-list__img{
+        width: 13%;
+    }
+    .contacts{
+        font-size: 11px;
+    }
+    .contactus__heading{
+        font-size: 14px;
+    }
+    .restaurant__heading{
+        font-size: 18px;
+        margin: 6px 0 25px;
+    }
+    .contactus-list__link .fas{
+        margin-right: 5px;
+    }
+    .footer{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 565px){
+    .logo__link{
+        font-size: 20px;
+    }
+    .menu__link{
+        font-size: 11px;
+    }
+    .menu__item{
+        margin-left: 22px;
+    }
+    .header__sandwich{
+        margin-top: 0px;
+    }
+    .info__heading{
+        font-size: 25px;
+    }
+    .info__text{
+        font-size: 14px;
+    }
+    .about-text{
+        height: 238px;
+    }
+    .heading {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    .about-text__text, 
+    .recipes__text {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .signatures{
+        height: 292px;
+    }
+    .recipes{
+        padding-top: 80px;
+    }
+    .dish-menu__dish-menu-content{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .dish-menu-content__part-menu{
+        margin-bottom: 39px;
+    }
+    .part-menu {
+        width: 73.4%;
+    }
+    .portfolio-list{
+        width: auto;
+    }
+    .portfolio-list__img {
+        width: 50%;
+    }
+    .contact-block {
+        text-align: center;
+    }
+    .contact-block__contacts,
+    .footer-block__footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .restaurant{
+        width: 75%;
+    }
+    .contacts__restautant,
+    .contacts__contactus{
+        margin-bottom: 30px;
+    }
+    .contactus{
+        width: 75%;
+        padding-right: 0px;
+    }
+    .contact-us{
+        width: 75%;
+    }
+    .footer__copyright{
+        width: 70%;
+        text-align: center;
+        margin-bottom: 11px;
+    }
+    .useful-links{
+        width: 67%;
+    }
+    .contactus__heading {
+        margin-bottom: 27px;
+    }
+    .footer__useful-links{
+        margin-bottom: 8px;
+    }
+    .socials{
+        width: 31%;
+        margin-right: 0px;
+    }
+    .footer{
+        letter-spacing: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+@media screen and (max-width: 360px){
+    .showpanel{
+        height: auto;
+        background-position-x: -551px;
+        background-position-y: -200px;
+    }
+    .showpanel__header{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: right;
+    }
+    .header{
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .sandwich__menu{
+        flex-direction: column;
+    }
+    .menu__item{
+        margin-left: 0px;
+    }
+    .menu__link {
+        font-size: 15px;
+    }
+    .sandwich__sandwich-box{
+        display: inline-block;
+    }
+    .sandwich__checkbox{
+        display: inline-block;
+    }
+    .sandwich__checkbox:checked ~ .sandwich-box .sandwich-box__line:before {
+        transform: rotate(-45deg);
+        /* translate3d(-6px,-6px,0) */
+        opacity: 0;
+    }
+    .sandwich__checkbox:checked ~ .sandwich-box .sandwich-box__line:after {
+        transform: translate3d(0,-20px,0) rotate(-90deg);
+    }
+    .sandwich__checkbox:checked ~ .sandwich-box .sandwich-box__line{
+        transform: translate3d(0,10px,0) rotate(45deg);
+    }
+    .sandwich__checkbox ~ .sandwich__label{
+        display: none;
+    }
+    .sandwich__checkbox:checked ~ .sandwich__label {
+        display: block;	
+        background: rgba(94, 94, 94, 0.342);
+        margin: 20px 0 0 0;	
+        padding: 20px 20px;
+    }
+    .showpanel__info{
+        padding-top: 15px;
+    }
+    .info{
+        width: 88%;
+        height: 280px;
+    }
+    .about__about-content{
+        flex-direction: column;
+    }
+    .about-content__about-img{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .about-img{
+        width: 83%;
+    }
+    .about-content{
+        height: 500px;
+    }
+    .about-text{
+        width: 80%;
+        height: 285px;
+    }
+    .heading{
+        font-size: 35px;
+    }
+    .recipes{
+        width: 80%;
+        height: 260px;
+        padding-top: 20px;
+    }
+    .part-menu {
+        width: 86%;
+    }
+    .dish-heading__name,
+    .dish-heading__price,
+    .dish__description{
+        font-size: 13px;
+    }
+    .dish-heading__price{
+        line-height: 40px;
+    }
+    .dish-menu-content__part-menu,
+    .part-menu__dish{
+        margin-bottom: 20px;
+    }
+    .portfolio-list__img {
+        width: 100%;
+    }
+    .socials{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 320px){
+    .signatures{
+        height: 320px;
+    }
+    .recipes{
+        height: 310px;
+    }
+    .useful-links{
+        width: 84%;
+    }
+}
