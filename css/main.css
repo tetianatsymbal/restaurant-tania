@@ -206,6 +206,7 @@ body{
 .signatures{
     height: 483px;
     background: url(../images/signature/bg.jpg) no-repeat;
+    background-size: cover;
     padding: 0.01%;
     box-sizing: border-box;
 }
