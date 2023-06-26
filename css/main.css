@@ -263,7 +263,7 @@ body{
 }
 .portfolio{
     font-size: 0;
-    max-width: 1600px;
+    width: 100%;
     overflow: hidden;
 }
 .portfolio-list{
